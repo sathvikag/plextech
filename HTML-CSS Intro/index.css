@@ -46,3 +46,52 @@ p {
 }
 
 /* TODO: Add CSS for the rest of your solution below */
+.redExample2 {
+  width: 80px;
+  background-color: red;
+}
+
+.redSquare {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.emptyExample {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.greenRectangle {
+  height: 20px;
+  flex-grow: inherit;
+  background-color: green;
+}
+
+.blueRectangle {
+  height: 20px;
+  flex-grow: inherit;
+  background-color: blue;
+}
+
+.orangeFlex {
+  flex: 1;
+  background-color: orange;
+}
+
+.greenSpace {
+  width: 20px;
+  background-color: green;
+}
+
+.greenFlex {
+  flex: 1;
+  background-color: green;
+}
+
+.orangeSpace {
+  width: 80px;
+  background-color: orange;
+}

@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="description" content="Free Web tutorials for HTML and CSS">
-        <meta name="author" content="John Doe">
-        <title>A Meaningful Page Title</title>
+        <title>HTML-CSS Intro Project</title>
+        <meta name="description" content="just plextech things">
+        <meta name="author" content="Sathvika Gopalasetty">
+        <img src="images/example.png">
+        <style>
+
+            .background {
+                width: 960px;
+                height: 800px;
+                background-color: lightblue;
+                flex-direction: column;
+            }
+
+            .flex {
+                display: flex;
+                justify-content: inline;
+                align-items: inline;
+                text-align: center;
+            }
+
+            .inner {
+                width: 960px;
+                height: 500px;
+                background-color: lightblue;
+                flex-direction: row;
+            }
+
+            .aside {
+                width: 200px;
+                height: 500px;
+                background-color: lightgreen;
+                border: solid 30px lightblue;
+            }
+
+            .header {
+                width: 940px;
+                height: 90px;
+                background-color: teal;
+                border: solid 10px lightblue;
+                text-align: center;
+            }
+
+            .article {
+                display: flex;
+                width: 600px;
+                height: 500px;
+                background-color: orange;
+                flex-direction: column;
+                justify-content: center;
+                border: solid 30px lightblue;
+            }
+
+            .imagebox {
+                display: flex;
+                width: 600px;
+                height: 300px;
+                background-color: orange;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-end;
+            }
+
+            .image {
+                width: 150px;
+                height: 150px;
+                background-color: lightyellow;
+            }
+
+        </style>
     </head>
     <body>
+        <div id="background" class = "background flex">
+            <div id="header" class = "header">
+                <h1>Header</h1>
+            </div>
+            <p>pick a mode</p>
+            <button onclick="dark()">dark mode</button>
+                <script>
+                    function dark() {
+                        var header = document.getElementById("header");
+                        header.style.backgroundColor = "#00008b";
+                        header.style.color = "#FFFFFF"
+
+                        var footer = document.getElementById("footer");
+                        footer.style.backgroundColor = "#00008b";
+                        footer.style.color = "#FFFFFF"
+
+                        var aside = document.getElementById("aside");
+                        aside.style.backgroundColor = "#00008b";
+                        aside.style.color = "#FFFFFF"
+
+                        var article = document.getElementById("article");
+                        article.style.backgroundColor = "#00008b";
+                        article.style.color = "#FFFFFF"
+
+                        var imagebox = document.getElementById("imagebox");
+                        imagebox.style.backgroundColor = "#00008b";
+                        imagebox.style.color = "#FFFFFF"
+
+                        var background = document.getElementById("background");
+                        background.style.backgroundColor = "#00008b";
+                        background.style.color = "#FFFFFF"
+                    }
+                </script>
+            <button onclick="light()">light mode</button>
+                <script>
+                    function light() {
+                        var header = document.getElementById("header");
+                        header.style.backgroundColor = "teal";
+                        header.style.color = "black"
+
+                        var footer = document.getElementById("footer");
+                        footer.style.backgroundColor = "teal";
+                        footer.style.color = "black"
+
+                        var aside = document.getElementById("aside");
+                        aside.style.backgroundColor = "lightgreen";
+                        aside.style.color = "black"
+
+                        var article = document.getElementById("article");
+                        article.style.backgroundColor = "orange";
+                        article.style.color = "black"
+
+                        var imagebox = document.getElementById("imagebox");
+                        imagebox.style.backgroundColor = "orange";
+                        imagebox.style.color = "black"
+
+                        var background = document.getElementById("background");
+                        background.style.backgroundColor = "lightblue";
+                        background.style.color = "black"
+                    }
+                </script>
+            <div class = "inner flex">
+                <div id="aside" class = "aside">
+                    <h1>Aside</h1>
+                </div>
+                <div id="article" class = "article">
+                    <h1>Article</h1>
+                    <div id="imagebox" class = "imagebox">
+                        <img class = "image" src="images/aite.png">
+                        <img class = "image" src="images/aite.png">
+                        <img class = "image" src="images/aite.png">
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class = "header">
+                <h1>Footer</h1>
+            </div>
+        </div>
         
     </body>
 </html>
